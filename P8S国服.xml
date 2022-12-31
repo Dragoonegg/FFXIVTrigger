@@ -1,0 +1,763 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="49ed3c53-a4a6-4b19-9680-152ca1201e11" Name="P8S国服" Enabled="true">
+    <Folders>
+      <Folder Id="3bed8282-5e65-43d5-9137-b1806690726c" Name="蛇" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Sequential="True" Name="Snake" Id="fc8f975e-26c3-44ac-9fdf-e16da0d5874e" RegularExpression="AddCombatant 03:400(?&lt;ID&gt;[0-9a-fA-F]{5}):[^:]*:00:5A:0000:00::11517:15052:6920000:6920000:10000:10000:::(?&lt;sx&gt;[^:]*):(?&lt;sy&gt;[^:]*):0.00:" RefirePeriodExpression="100" MutexToCapture="test">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="snaketimes" VariableExpression="${var:snaketimes}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="SystemBeep" ExecutionDelayExpression="100" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="ID${var:snaketimes}" VariableExpression="hex2dec(${ID})" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetString" VariableName="sx${var:snaketimes}" VariableExpression="${sx}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" VariableOp="SetString" VariableName="sy${var:snaketimes}" VariableExpression="${sy}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="f1a2b585-70b8-4cdd-b888-92ededf0ef36" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="bbf2796f-376d-4b39-8933-0754e3632acb" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="fde59c5d-2874-4423-a6fa-15cb151a993a" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="62641b5d-5945-4669-86d4-cc59c72dc471" TriggerForce="regexp" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="初始化" Id="a83cbd6f-88cc-42c9-adf8-be073d4081d0" RegularExpression="">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="snaketimes" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetString" VariableName="85.00i115.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetString" VariableName="89.39i115.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetString" VariableName="100.00i115.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" VariableOp="SetString" VariableName="110.61i115.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" VariableOp="SetString" VariableName="115.00i115.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" VariableOp="SetString" VariableName="85.00i110.61" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" VariableOp="SetString" VariableName="89.39i110.61" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" VariableOp="SetString" VariableName="100.00i110.61" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" VariableOp="SetString" VariableName="110.61i110.61" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="11" VariableOp="SetString" VariableName="115.00i110.61" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="12" VariableOp="SetString" VariableName="85.00i100.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="13" VariableOp="SetString" VariableName="89.39i100.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="14" VariableOp="SetString" VariableName="100.00i100.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="15" VariableOp="SetString" VariableName="110.61i100.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="16" VariableOp="SetString" VariableName="115.00i100.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="17" VariableOp="SetString" VariableName="85.00i89.39" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="18" VariableOp="SetString" VariableName="89.39i89.39" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="19" VariableOp="SetString" VariableName="100i89.39" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="20" VariableOp="SetString" VariableName="110.61i89.39" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="21" VariableOp="SetString" VariableName="115i89.39" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="22" VariableOp="SetString" VariableName="85.00i85.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="23" VariableOp="SetString" VariableName="89.39i85.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="24" VariableOp="SetString" VariableName="100.00i85.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="25" VariableOp="SetString" VariableName="110.61i85.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="26" VariableOp="SetString" VariableName="115.00i85.00" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="27" VariableOp="SetNumeric" VariableName="ID" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="ID1" Id="f1a2b585-70b8-4cdd-b888-92ededf0ef36" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx1}i${var:sy1}" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="1500">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx1}i${var:sy1}" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Not">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID1}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="ID2" Id="bbf2796f-376d-4b39-8933-0754e3632acb" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx2}i${var:sy2}" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="1250">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx2}i${var:sy2}" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Not">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID2}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="ID3" Id="fde59c5d-2874-4423-a6fa-15cb151a993a" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx3}i${var:sy3}" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx3}i${var:sy3}" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Not">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID3}" ExpressionTypeL="Numeric" ExpressionR="${var:ID4}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="ID4" Id="62641b5d-5945-4669-86d4-cc59c72dc471" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx4}i${var:sy4}" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="750">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" SystemBeepFreqExpression="2000" VariableOp="SetNumeric" VariableName="${var:sx4}i${var:sy4}" VariableExpression="2" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Not">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="Or">
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID2}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                    <ConditionGroup Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID3}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:ID4}" ExpressionTypeL="Numeric" ExpressionR="${var:ID1}" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </ConditionGroup>
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="53f0186b-f7b3-4aef-afca-40856657ce9a" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="750">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Sequential="True" Name="游戏内播报蛇（需要鲶鱼精）" Id="53f0186b-f7b3-4aef-afca-40856657ce9a" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="SystemBeep">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/e ${var:85.00i85.00} ${var:89.39i85.00} ${var:100.00i85.00} ${var:110.61i85.00} ${var:115.00i85.00}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/e ${var:85.00i89.39} ${var:89.39i89.39} ${var:100i89.39} ${var:110.61i89.39} ${var:115i89.39}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/e ${var:85.00i100.00} ${var:89.39i100.00} ${var:100.00i100.00} ${var:110.61i100.00} ${var:115.00i100.00}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/e ${var:85.00i110.61} ${var:89.39i110.61} ${var:100.00i110.61} ${var:110.61i110.61} ${var:115.00i110.61}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/e ${var:85.00i115.00} ${var:89.39i115.00} ${var:100.00i115.00} ${var:110.61i115.00} ${var:115.00i115.00}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/e ${var:index_to_name_${var:leftleft}} ${var:index_to_name_${var:leftright}}    ${var:index_to_name_${var:rightleft}} ${var:index_to_name_${var:rightright}}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/p    ${var:index_to_name_${var:leftdown}}           ${var:index_to_name_${var:rightdown}}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="9" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="a83cbd6f-88cc-42c9-adf8-be073d4081d0" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="12873409-79eb-4b43-beae-9387cb9ab2b9" Name="4连跳" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="第一次钢铁or击退" Id="458ad06d-16c4-462b-9f8c-e11abbef89c6" RegularExpression="AOEActionEffect 16:.*?:[^:]*:(?&lt;ActionID&gt;[0-9a-fA-F]{4}):.*?:.*?:[^:]*:1B:.*?:0:0:0:0:0:0:0:0:0:0:0:0:0:0:44:44:0:10000:::(?&lt;jx&gt;[^:]*):(?&lt;jy&gt;[^:]*):">
+            <Actions>
+              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="jumptimes" VariableExpression="${var:jumptimes}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" VariableOp="SetString" VariableName="safespot" VariableExpression="Null" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" VariableOp="SetString" VariableName="ActionType" VariableExpression="遠離" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793D" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" VariableOp="SetString" VariableName="ActionType" VariableExpression="撃退" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793C" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" VariableOp="SetString" VariableName="safespot" VariableExpression="A" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="80" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793C" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="120" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793D" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" VariableOp="SetString" VariableName="safespot" VariableExpression="B" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="120" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793C" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="80" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793D" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" VariableOp="SetString" VariableName="safespot" VariableExpression="C" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="120" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793C" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="80" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793D" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" VariableOp="SetString" VariableName="safespot" VariableExpression="D" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="80" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793C" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                  <ConditionGroup Enabled="true" Grouping="And">
+                    <ConditionSingle Enabled="true" ExpressionL="${jy}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${jx}" ExpressionTypeL="Numeric" ExpressionR="120" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    <ConditionSingle Enabled="true" ExpressionL="${ActionID}" ExpressionTypeL="String" ExpressionR="793D" ExpressionTypeR="String" ConditionType="RegexMatch" />
+                  </ConditionGroup>
+                </Condition>
+              </Action>
+              <Action OrderNumber="9" PlaySpeechMyself="True" UseTTSTextExpression="第${var:jumptimes}次安全点为${var:safespot} ${var:safespot} ${var:safespot}" UseTTSRateExpression="6" UseTTSExclusive="False" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="10">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="10" NamedCallbackName="command" NamedCallbackParam="/e 第${var:jumptimes}次${var:ActionType}:GO TO ${var:safespot} ${var:safespot} ${var:safespot}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Sequential="True" Name="门神Uplift点名顺序" Id="bc953a0b-2628-4b0a-a1f8-6bc36c62d71f" RegularExpression="^.{14} (AOEActionEffect 16|ActionEffect 15):(4[0-9A-F]{7}):.+?:7935:.+?:(1[0-9A-F]{7}):(?&lt;name&gt;[^:]*):" Scheduling="FromLastAction">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="times" VariableExpression="${var:times}+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/p ${var:times}:${name}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" UseTTSTextExpression="第${var:times}个" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="926c3152-1b82-47fc-bb3c-e6a4622b85f2" TriggerText="Tip_Subtitle:第${times}个:5:0:0:main" Enabled="False" ActionType="UseTTS">
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/mk attack1 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/mk attack2 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="2" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/mk attack3 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/mk attack4 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" NamedCallbackName="command" NamedCallbackParam="/mk attack5 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" NamedCallbackName="command" NamedCallbackParam="/mk bind1 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="6" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="10" NamedCallbackName="command" NamedCallbackParam="/mk bind2 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="7" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="11" NamedCallbackName="command" NamedCallbackParam="/mk bind3 &lt;${_ffxivparty[${name}].order}&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${times}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="Floor" Id="60f81f53-e2d2-45ad-8356-2480faf37b33" RegularExpression="StartsCasting 14:.*?:[^:]*:7927:[^:]*:.*?:[^:]*:9.700:(?&lt;x&gt;[^:]*):(?&lt;y&gt;[^:]*):0.00:0.00">
+        <Actions>
+          <Action OrderNumber="1" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="1" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="2" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="2" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="3" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="3" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="4" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="4" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="5" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="5" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="6" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="6" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="7" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="7" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="8" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="8" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="9" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="9" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="10" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="10" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="11" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="11" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="12" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="12" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="13" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="13" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="14" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="14" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="95" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="15" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="15" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="105" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="16" SystemBeepFreqExpression="500" VariableOp="SetString" VariableName="16" VariableExpression="■" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="true" Grouping="And">
+              <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="115" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="85" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+          </Action>
+          <Action OrderNumber="17" VariableOp="SetNumeric" VariableName="floors" VariableExpression="${var:floors}+1" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="地板初始化" Id="7c884a19-d1ca-45d8-8cbf-07cc07a326d8" RegularExpression="StartsCasting 14:.*?:[^:]*:78F7:[^:]*:.*?:[^:]*:2.700:">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetString" VariableName="1" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" VariableOp="SetString" VariableName="2" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" VariableOp="SetString" VariableName="3" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" VariableOp="SetString" VariableName="4" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" VariableOp="SetString" VariableName="5" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" VariableOp="SetString" VariableName="6" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" VariableOp="SetString" VariableName="7" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" VariableOp="SetString" VariableName="8" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" VariableOp="SetString" VariableName="9" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" VariableOp="SetString" VariableName="10" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" VariableOp="SetString" VariableName="11" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" VariableOp="SetString" VariableName="12" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="13" VariableOp="SetString" VariableName="13" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="14" VariableOp="SetString" VariableName="14" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="15" VariableOp="SetString" VariableName="15" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="16" VariableOp="SetString" VariableName="16" VariableExpression="□" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="17" VariableName="floors" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="18" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="019c8d3a-001e-47ec-be7c-9f93c38ba873" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger" ExecutionDelayExpression="8000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Sequential="True" Name="游戏内播报（需要鲶鱼精）" Id="019c8d3a-001e-47ec-be7c-9f93c38ba873" RegularExpression="StartsCasting 14:.*?:Hephaistos:7927:Torch Flame:.*?:Hephaistos:9.700:.*?:.*?:0.00:0.00" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+        <Actions>
+          <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="SystemBeep">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" NamedCallbackName="command" NamedCallbackParam="/p ${var:13}${var:14}${var:15}${var:16}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="1000" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" NamedCallbackName="command" NamedCallbackParam="/p ${var:9}${var:10}${var:11}${var:12}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" NamedCallbackName="command" NamedCallbackParam="/p ${var:5}${var:6}${var:7}${var:8}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" NamedCallbackName="command" NamedCallbackParam="/p ${var:1}${var:2}${var:3}${var:4}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" NamedCallbackName="command" NamedCallbackParam="/p ${var:index_to_name_${var:leftleft}} ${var:index_to_name_${var:leftright}}    ${var:index_to_name_${var:rightleft}} ${var:index_to_name_${var:rightright}}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" NamedCallbackName="command" NamedCallbackParam="/p    ${var:index_to_name_${var:leftdown}}           ${var:index_to_name_${var:rightdown}}" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="NamedCallback" ExecutionDelayExpression="10" Asynchronous="False">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="7c884a19-d1ca-45d8-8cbf-07cc07a326d8" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="5000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="团灭重置战斗记录Coutndown" Id="97b3efe8-957b-4449-bc71-351d28ae01ee" RegularExpression="^.{15}Director 21:.{8}:4000001[0126]" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000" MutexToCapture="EncEnd">
+        <Actions>
+          <Action OrderNumber="1" MutexOpType="Acquire" MutexName="EncEnd" ActionType="Mutex">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="SelfShieldCheck" TextAuraFontName="宋体" Enabled="False" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" TextAuraOp="DeactivateAura" TextAuraFontSize="9" TextAuraName="ASShieldCheck" TextAuraFontName="宋体" Enabled="False" ActionType="TextAura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" ActionType="EndEncounter">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="tbntimes" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="6" VariableName="times" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="7" VariableName="jumptimes" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="8" VariableName="timess" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="9" ListVariableName="Natural Alignment Count" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="ListVariable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="10" UseTTSTextExpression="wipeset" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="11" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="7c884a19-d1ca-45d8-8cbf-07cc07a326d8" TriggerForce="regexp,conditions" Enabled="False" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="12" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="7c884a19-d1ca-45d8-8cbf-07cc07a326d8" TriggerForce="regexp,conditions" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="13" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="7f3f2d8d-33b9-475e-8e38-ffdc824a97f4" TriggerForce="regexp,conditions" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="14" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="d8b0e224-371f-4ef7-a709-bc6bc55e9531" TriggerForce="regexp,conditions" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="15" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="a83cbd6f-88cc-42c9-adf8-be073d4081d0" TriggerForce="regexp,conditions" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="16" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="3bdc600f-ba76-4590-967b-52665ba7732a" TriggerForce="regexp,conditions" ActionType="Trigger">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="17" MutexName="EncEnd" ActionType="Mutex" ExecutionDelayExpression="5000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
